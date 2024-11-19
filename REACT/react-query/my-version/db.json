@@ -1,0 +1,58 @@
+{
+  "superheroes": [
+    {
+      "id": "1",
+      "name": "Batman",
+      "alterEgo": "Bruce Wayne"
+    },
+    {
+      "id": "2",
+      "name": "Superman",
+      "alterEgo": "Clark Kent"
+    },
+    {
+      "id": "3",
+      "name": "Wonder Woman",
+      "alterEgo": "Princess Diana"
+    },
+    {
+      "id": "e24b",
+      "name": "Barry Allen",
+      "alterEgo": "The Flash"
+    },
+    {
+      "id": "b192",
+      "name": "mon",
+      "alterEgo": "mamon"
+    },
+    {
+      "id": "4530",
+      "name": "man",
+      "alterEgo": "mamamamamn"
+    },
+    {
+      "id": "0e62",
+      "name": "Raldsfhsdfh",
+      "alterEgo": "shazam"
+    },
+    {
+      "id": "f866",
+      "name": "monmon",
+      "alterEgo": "hehemon"
+    }
+  ],
+  "friends": [
+    {
+      "id": "1",
+      "name": "Chandler Bing"
+    },
+    {
+      "id": "2",
+      "name": "Joey Tribbiani"
+    },
+    {
+      "id": "3",
+      "name": "Rachel Green"
+    }
+  ]
+}
