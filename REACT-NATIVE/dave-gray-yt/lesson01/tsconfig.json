@@ -8,9 +8,10 @@
   },
   "include": [
     "**/*.ts",
-    "**/*.tsx",
+    "**/*.tsx", 
+    "**/*.jsx", // replace the "app/index.jsx by this para lahat na ng jsx ay i check
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
-    "app/(tabs)/index.jsx"
+    // "app/index.jsx"
   ]
 }

@@ -1,12 +1,19 @@
-import { View, Text, StyleSheet, ImageBackground } from "react-native";
+import { Text, StyleSheet, ImageBackground, Pressable } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import icedCoffeeImg from "@/assets/images/iced-coffee.png";
+import { Link } from "expo-router";
+
 const app = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground source={icedCoffeeImg} style={styles.image}>
-        <Text style={styles.text}>Coffee shop</Text>
+        <Text style={styles.title}>Coffee shop</Text>
+        <Link href={"/contact"} style={{ marginHorizontal: "auto" }} asChild>
+          <Pressable style={styles.button}>
+            <Text style={styles.buttonText}> Contact Us</Text>
+          </Pressable>
+        </Link>
       </ImageBackground>
     </SafeAreaView>
   );
@@ -19,12 +26,36 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
   },
-  text: {
+  title: {
     color: "white",
     fontSize: 42,
     fontWeight: "bold",
     textAlign: "center",
     backgroundColor: "rgba(0,0,0,0.5)",
+    marginBottom: 120,
+  },
+  link: {
+    color: "white",
+    fontSize: 42,
+    fontWeight: "bold",
+    textAlign: "center",
+    textDecorationLine: "underline",
+    padding: 4,
+    backgroundColor: "rgba(0,0,0,0.5)",
+  },
+  button: {
+    height: 60,
+    borderRadius: 20,
+    justifyContent: "center",
+    backgroundColor: "rgba(0,0,0,0.75)",
+    padding: 6,
+  },
+  buttonText: {
+    color: "white",
+    fontSize: 42,
+    fontWeight: "bold",
+    textAlign: "center",
+    padding: 4,
   },
   image: {
     width: "100%",
