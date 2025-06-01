@@ -9,9 +9,9 @@ const app = () => {
     <SafeAreaView style={styles.container}>
       <ImageBackground source={icedCoffeeImg} style={styles.image}>
         <Text style={styles.title}>Coffee shop</Text>
-        <Link href={"/contact"} style={{ marginHorizontal: "auto" }} asChild>
+        <Link href={"/(coffee)/"} style={{ marginHorizontal: "auto" }} asChild>
           <Pressable style={styles.button}>
-            <Text style={styles.buttonText}> Contact Us</Text>
+            <Text style={styles.buttonText}>TYPES</Text>
           </Pressable>
         </Link>
       </ImageBackground>
