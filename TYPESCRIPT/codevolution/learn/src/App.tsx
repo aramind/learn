@@ -7,6 +7,9 @@ import PersonList from "./components/PersonList";
 import Status from "./components/Status";
 import Heading from "./components/Heading";
 import Oscar from "./components/Oscar";
+import Button from "./components/Button";
+import Input from "./components/Input";
+import Container from "./components/Container";
 
 const personName = {
   first: "Bruce",
@@ -21,12 +24,7 @@ const nameList = [
 function App() {
   return (
     <div className="App">
-      <Status status="loading" />
-      <Heading>Placeholder text</Heading>
-      <Oscar>
-        <Heading>Oscar goes to Leonardo Dicaprio!</Heading>
-      </Oscar>
-      <Greet name="Robin" isLoggedIn={true} />
+      <Container styles={{ border: "1px solid black", padding: "1rem" }} />
     </div>
   );
 }
