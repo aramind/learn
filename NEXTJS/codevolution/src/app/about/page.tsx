@@ -1,7 +1,10 @@
+import { cookies } from "next/headers";
 import React from "react";
 
-const About = () => {
-  return <div>About</div>;
-};
-
-export default About;
+export default async function AboutPage() {
+  const cookieStore = await cookies();
+  const theme = cookieStore.get("theme");
+  console.log(theme);
+  console.log("About server component");
+  return <div>AboutPage</div>;
+}
